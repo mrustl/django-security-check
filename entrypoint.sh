@@ -27,5 +27,6 @@ if [[ -z "$ENV_TYPE" ]]; then
 fi
 
 echo -e "\n--------- Django Security Check results ---------"
-cat output.txt
-echo -e "Output path as: " readlink -f ${output}
+cat ${output}
+echo -e "Output path as:"
+readlink -f ${output}
