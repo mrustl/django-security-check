@@ -5,7 +5,7 @@
 FAIL=${FAIL_LEVEL:=ERROR}
 MANAGE_PATH=${GITHUB_WORKSPACE}/${APP_PATH}
 REQS=${GITHUB_WORKSPACE}/${DEP_PATH}
-output="output.txt""
+output="output.txt"
 
 echo -e "Path to manage.py set as: " $MANAGE_PATH
 echo -e "Requirements path set as: " $REQS
@@ -28,4 +28,4 @@ fi
 
 echo -e "\n--------- Django Security Check results ---------"
 cat output.txt
-echo -e "Output path as: " $(readlink -f "$output")
+echo -e "Output path as: " $(readlink -f ${output})
