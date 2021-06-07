@@ -28,4 +28,4 @@ fi
 
 echo -e "\n--------- Django Security Check results ---------"
 cat output.txt
-echo -e "Output path as: " $(readlink -f ${output})
+echo -e "Output path as: " readlink -f ${output}
